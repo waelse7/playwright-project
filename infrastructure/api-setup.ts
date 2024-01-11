@@ -8,7 +8,7 @@ const httpRequest = async <T>(url:string, data:T, context:BrowserContext) =>{
         )
     const state = await context.storageState()
     const updatedcontext = await context.browser()?.newContext({ storageState: state })
-    return { response, updatedcontext }
+    return [ response, updatedcontext ]
 }
 
 export { httpRequest }

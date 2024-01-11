@@ -1,8 +1,6 @@
 import { Page, expect, test } from 'playwright/test'
 
-import { getContext, getPage, setupUi, teardownUi } from '../infrastructure/ui-setup'
-import { getNewContext } from '../infrastructure/api-setup'
-import utils from '../logic/utils'
+import utils from '../logic/api/utils'
 import apicalls from '../logic/api/apiCalls'
 import { CartComponent } from '../logic/ui/componenets/cartComponent'
 import HomePage from '../logic/ui/pages/homePage'
