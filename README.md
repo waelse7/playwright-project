@@ -33,7 +33,7 @@ After installing the project dependencies, you can run the tests using the follo
 
 ```bash
 # Run tests
-npm test
+npx playwright test
 ```
 
 ## Dependencies
