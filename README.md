@@ -41,4 +41,4 @@ Playwright: A Node library to automate browsers.
 
 ## Note 
 
-this project is still WIP and does not work. 
+This project is still WIP and does not work. 
