@@ -38,3 +38,7 @@ npx playwright test
 
 ## Dependencies
 Playwright: A Node library to automate browsers.
+
+## note 
+
+this project is still WIP and does not work. 
