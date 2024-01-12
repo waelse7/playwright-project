@@ -1,6 +1,6 @@
 import { Locator , Page } from 'playwright';
-import BasePage from './basePage';
-export default class HomePage extends BasePage {
+import { BasePage } from './basePage';
+export class HomePage extends BasePage {
    
   private loginBtn : Locator
   private greeting : Locator

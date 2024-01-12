@@ -1,7 +1,6 @@
-// src/pages/BasePage.ts
 import { Page } from 'playwright';
 
-export default class BasePage {
+export class BasePage {
   page: Page;
 
   constructor(page: Page) {
@@ -10,5 +9,6 @@ export default class BasePage {
   async reload(){
     await this.page.reload()
   }
+  go = async (url: string) => await this.page.goto(url)
   
 }

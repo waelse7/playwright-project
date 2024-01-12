@@ -2,11 +2,11 @@ import { test as temp } from '@playwright/test'
 import { CartComponent } from '../logic/ui/componenets/cartComponent'
 import { WishlistPage } from '../logic/ui/pages/wishListPage'
 import { LoginComponent } from '../logic/ui/componenets/loginComponent'
-import HomePage from '../logic/ui/pages/homePage'
+import { HomePage } from '../logic/ui/pages/homePage'
 import { ListingPage } from '../logic/ui/pages/listingPage'
 import { QuickViewPage } from '../logic/ui/pages/quickViewPage'
 
-export default const test = temp.extend<{homePage: HomePage, loginComponent: LoginComponent,
+export const test = temp.extend<{homePage: HomePage, loginComponent: LoginComponent,
   cartCompnonent: CartComponent, wishlistPage: WishlistPage, listingPage: ListingPage, quickViewPage: QuickViewPage}>
 ({
   homePage: async ({ page }, use) => {
